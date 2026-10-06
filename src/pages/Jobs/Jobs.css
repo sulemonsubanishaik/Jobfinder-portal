@@ -1,0 +1,136 @@
+.jobs-page-wrapper {
+  padding-bottom: 60px;
+}
+
+/* Header */
+.jobs-hero-header {
+  background: linear-gradient(180deg, #ffffff 0%, var(--bg-page) 100%);
+  padding: 40px 0 24px;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 24px;
+}
+
+.jobs-header-intro {
+  margin-bottom: 20px;
+}
+
+.jobs-page-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--slate-900);
+  letter-spacing: -0.02em;
+}
+
+.jobs-page-desc {
+  font-size: 1rem;
+  color: var(--slate-600);
+  margin-top: 4px;
+}
+
+.jobs-search-box {
+  max-width: 900px;
+}
+
+/* Main Layout */
+.jobs-main-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Active Filters Bar */
+.active-filters-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 12px 18px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+}
+
+.active-filters-label {
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: var(--slate-500);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.active-tags-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.active-tag-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--primary-50);
+  border: 1px solid var(--primary-200);
+  color: var(--primary-800);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.active-tag-chip button {
+  color: var(--primary-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 2px;
+  transition: all var(--transition-fast);
+}
+
+.active-tag-chip button:hover {
+  background-color: var(--primary-200);
+  color: var(--primary-900);
+}
+
+.clear-all-chips-btn {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--rose-600);
+  margin-left: 6px;
+  transition: opacity var(--transition-fast);
+}
+
+.clear-all-chips-btn:hover {
+  text-decoration: underline;
+}
+
+/* Two Column Grid */
+.jobs-content-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.jobs-sidebar {
+  position: sticky;
+  top: 90px;
+}
+
+.jobs-results-column {
+  min-width: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .jobs-content-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .jobs-sidebar {
+    position: static;
+  }
+}

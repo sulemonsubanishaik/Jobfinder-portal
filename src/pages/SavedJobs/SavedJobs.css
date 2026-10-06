@@ -1,0 +1,97 @@
+/* Saved Jobs Page */
+
+.saved-jobs-page {
+  padding-bottom: 60px;
+}
+
+.saved-jobs-header {
+  background: linear-gradient(180deg, #ffffff 0%, var(--bg-page) 100%);
+  padding: 40px 0 24px;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 30px;
+}
+
+.saved-header-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.saved-page-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--slate-900);
+  letter-spacing: -0.02em;
+}
+
+.saved-page-desc {
+  font-size: 1rem;
+  color: var(--slate-600);
+  margin-top: 4px;
+}
+
+.saved-count-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--primary-50);
+  border: 1px solid var(--primary-200);
+  color: var(--primary-700);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.saved-jobs-content {
+  width: 100%;
+}
+
+.saved-jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.empty-saved-card {
+  padding: 60px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.empty-saved-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--primary-50);
+  color: var(--primary-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.empty-saved-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--slate-900);
+  margin-bottom: 8px;
+}
+
+.empty-saved-desc {
+  font-size: 0.95rem;
+  color: var(--slate-500);
+  max-width: 440px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .saved-jobs-grid {
+    grid-template-columns: 1fr;
+  }
+}
